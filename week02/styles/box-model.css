@@ -1,15 +1,27 @@
 .callout {
-	
+	background-color: #3498db; /* Blue background */
+    padding: 50px;
+    position: relative;
 }
 
 .callout img {
-	
+	position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20%; /* Adjust image size */
 }
 
 blockquote {
-	
+    color: #ffffff; /* White text for verses */
+    margin-right: 20%; /* Make space for image */
 }
 
-cite {
-	
+.callout cite {
+    color: #ffffff; /* White text for citation */
+    text-align: right;
+    display: block;
+    border-top: 1px dashed #ffffff; /* Adds a thin dashed line */
+    padding-top: 5px;
+    position: relative;
+    clear: both;
 }
