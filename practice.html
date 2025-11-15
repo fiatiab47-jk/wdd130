@@ -1,35 +1,52 @@
+<!--The Basic Semantic Structure of a webpage-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <title>My practice page</title>
+    <title>My Learning Page</title>
 </head>
 
 <body>
-    <!--3 heading introducing my hometown: -->
-    <h1>Welcome to KETA</h1>
-    <h2>Come and explore Keta this coming Hogbetsotso</h2>
-    <h3>Votal Region is large and full of rich cultures</h3>
-    <img src="images/beach resort.jpeg" alt="Keta beach resort guest house">
-    <p>My experience in Keta exposed me to a lot of things I had not know about my
-        culture.The following are the things I discovered;
-    </p>
-    <ul>
-        <li>The Agbadza dance</li>
-        <li>The amazing Dzolali</li>
-        <li>The Festival</li>
-        <li>And many others</li>
-    </ul>
-    <ol>
-        <li>We also have the following:</li>
-        <li>Coconut Trees</li>
-        <li>Tourist Sites</li>
-        <li>Come find out the rest</li>
-    </ol>
-    <p>Come home my Ewe people let's celebrate our land and culture.</p>
+    <header>
+        <h1>My Biography and Ambitions</h1>
+        <nav>
+            <ol>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ol>
+        </nav>
+        <h2>My Family</h2>
+        <ul>
+            <li>
+                <a href="#contacts">Contacts</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <h2>Welcome to my Blog</h2>
+        <p>Read about <b>me and my family</b> below</p>
+        <article>
+            <h3>The journey of my life and careers</h3>
+            <p>I began my barbering career when I was in high-school, and Software development career in 2025.</p>
+        </article>
+
+        <!--Rule: Each <section> should generally have a heading (<h1> to <h6>)-->
+        <section id="about">
+            <h3>Occupation</h3>
+            <p>I am a professional barber and an upcoming web developer passionate about my success.</p>
+        </section>
+        <aside>
+            <h3>Related blog</h3>
+            <ul>
+                <li><a href="#">Family Meetings</a></li>
+                <li><a href="#">Family Tours</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer> <b>Albert Fiati</b> © 2025, All rights reserved</footer>
 </body>
 
 </html>
