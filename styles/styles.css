@@ -2,7 +2,11 @@
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
+    
+}
 
+a:hover {
+    background-color: #d8066f;
 }
 
 main {
@@ -31,29 +35,52 @@ aside {
 
 aside h2 {
     position: absolute;
-    left: 190px;
+    left: 100px;
     top: 45px;
 }
 
 aside img {
-    width: 400px;
+    width: 240px;
     height: auto;
 }
 
 nav {
     background-color: darkblue;
     padding: 10px;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0auto;
+}
+
+.grid {
+display: grid;
+grid-template-columns: auto 300px;
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    font-weight: 1000;
+    text-decoration: none;
+    font-size: 1.6rem;
+    background-color: #000;
 }
+
 
 h1 {
     color: darkblue;
-    margin-top: 20px;
+    margin-top: 10px;
+    border-bottom: 0.4rem solid;
+    border-color: rgb(85, 120, 100);
+    padding-bottom: 5px;
+    text-align: center;
 }
 
 p {
@@ -78,7 +105,7 @@ ul {
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
-    text-align: center;
     background-color: aqua;
     padding-bottom: 5px;
+    text-align: center;
 }
