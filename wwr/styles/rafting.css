@@ -26,7 +26,7 @@ h1 {
     color: #fff;
 }
 
-.mv img {
+.logo img {
     width: 250px;
     height: auto;
     border-left: 0.5rem solid;
@@ -37,30 +37,36 @@ h1 {
     margin-right: 40px;
 }
 
-.mv {
+.header {
     display: grid;
-    grid-template-columns:  1fr auto;
+    grid-template-columns:  auto 1fr;
     align-items: center;
     background-color: rgb(126, 80, 189);
-    display: flex;
     margin-bottom: 10px;
     border-radius: 10px;
 }
 
-.mv a {
+.navbar ul {
     text-decoration: none;
-    padding: 10px;
-    background-color: #063131;
-    margin-right: 10px;
+    background-color: #95b8b8;
+    display: flex;                    /* Flexbox for horizontal nav items */
+    list-style-type: none;           /* Remove bullet points */
+    margin: 0;                       /* Remove default margin */
+    padding: 0px;                       /*Remove default padding */
+    justify-content: space-around;   /* Even spacing for nav items */
+    font-weight: bold;
+    margin-right: 15px;
 }
 
-.mv a:hover {
-    background-color: aqua;
-}
-
-.mv nav {
-    display: flex;
+.navbar a {
+    text-decoration: none;            /* Remove underline */
+    color: #333;                     /* Text color */
+    padding: 1px;               /* Padding for clickable area */
     display: block;
+}
+
+.navbar a:hover {
+    background-color: aqua;
 }
 
 header, main, footer {
@@ -121,6 +127,7 @@ nav, p, section, article {
 
 .paragraph img {
     height: 100px;
+    margin-bottom: 10px;
 }
 
 
@@ -139,7 +146,6 @@ nav, p, section, article {
 .figures-container {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: nowrap;
 }
 
 .adventures img {
