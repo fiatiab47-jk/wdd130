@@ -17,8 +17,9 @@ body {
     color: var(--accent1-color);
 }
 
+
+
 h1 {
-    top: 165px;
     width: 100%;
     padding: 12px;
     text-align: center;
@@ -60,7 +61,7 @@ h1 {
 
 .navbar a {
     text-decoration: none;            /* Remove underline */
-    color: #333;                     /* Text color */
+    color: #090909;                     /* Text color */
     padding: 1px;               /* Padding for clickable area */
     display: block;
 }
@@ -100,6 +101,7 @@ nav, p, section, article {
     position: absolute;
     top: 100px;
 }
+
 .hero article {
     top: 500px;
     left: 1%;
