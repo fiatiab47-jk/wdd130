@@ -26,12 +26,6 @@ h1 {
     color: #fff;
 }
 
-.raft {
-    display: grid; 
-    display: flex;
-    flex-direction: column;
-}
-
 .mv img {
     width: 250px;
     height: auto;
@@ -49,6 +43,8 @@ h1 {
     align-items: center;
     background-color: rgb(126, 80, 189);
     display: flex;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 .mv a {
@@ -83,15 +79,29 @@ nav, p, section, article {
     padding: 0px;
 }
 
+.hero {
+    position: relative;
+}
 
+.hero img { 
+    display: block;
+    width: 100%;
+    height: auto;
+     border-radius: 10px;
+}
+
+.hero h1 {
+    position: absolute;
+}
 .hero article {
-    top: 350px;
+    top: 500px;
     left: 1%;
     right: 1%;
     background-color: rgba(222, 202, 229, 0.8);
     padding: 1rem;
     border-radius: 10px;
     max-width: 840px;
+    position: absolute;
 }
 
 .hero article img {
@@ -105,6 +115,7 @@ nav, p, section, article {
    display: flex;
    flex-direction: row;
    background-color: rgba(222, 202, 229, 0.8);
+   border-radius: 10px;
 }
 
 .paragraph img {
