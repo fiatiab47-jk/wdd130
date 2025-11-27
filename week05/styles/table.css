@@ -1,8 +1,19 @@
+.table-container {
+    overflow-x: auto;
+    width: 100%;
+}
+
+@media( max-width: 600px) {
+    table{
+        width: 100%;
+    }
+}
+
 table {
     border-collapse: collapse ;
     border: 4px solid rebeccapurple;
     letter-spacing: 1px;
-    width: 600px;
+    width: 90%;
     height: auto;
     margin: 0 auto;
 }
