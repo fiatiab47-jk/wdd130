@@ -17,7 +17,7 @@ body {
 /* Header + h1 */
 header {
     margin: 0 auto;
-    width: 780px;
+    width: 650px;
 }
 
 h1 {
@@ -28,7 +28,7 @@ h1 {
 
 form {
     margin: 1rem auto;
-    width: 55rem ;
+    width: 650px ;
     padding: 1rem;
     border: 5px solid rgb(46, 38, 107);
     border-radius: 1.5rem;
