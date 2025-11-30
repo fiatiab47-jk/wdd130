@@ -62,9 +62,8 @@ h1 {
 .navbar a {
     text-decoration: none;            /* Remove underline */
     color: #090909;                     /* Text color */
-    padding: 6px;               /* Padding for clickable area */
+    padding: 5px;               /* Padding for clickable area */
     display: block;
-    font-size: 1.2rem;
 }
 
 .navbar a:hover {
@@ -80,7 +79,7 @@ header, main, footer {
 
 nav, p, section {
     margin: 8px;
-    padding: 3px;
+    padding: 0;
 }
 
 
