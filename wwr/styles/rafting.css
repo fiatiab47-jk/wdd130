@@ -76,10 +76,27 @@ header, main, footer {
     width: 100%;
 }
 
+h1, h2 {
+    font-family: var(--heading-font);
+    margin-bottom: 10px;
+}
 
-nav, p, section {
+
+
+nav, p, section, article {
     margin: 8px;
     padding: 0;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img { 
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 
@@ -88,15 +105,44 @@ nav, p, section {
     top: 100px;
 }
 
+.hero article {
+    top: 60%;
+    left: 1%;
+    right: 1%;
+    background-color: rgba(222, 202, 229, 0.8);
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 840px;
+    position: absolute;
+}
 
-.employees {
+.hero article img {
+    float: right;
+    width: 125px;
+}
+
+
+.paragraph {
+   align-items: center;
+   display: flex;
+   flex-direction: row;
+   background-color: rgba(222, 202, 229, 0.8);
+   border-radius: 10px;
+}
+
+.paragraph img {
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.employees, .adventures  {
     display: flex;
     background-color: rgba(222, 202, 229, 0.8); 
     flex-direction: column; 
     border-radius: 10px;
 }
 
-.employees figure, h2 {
+.employees figure, .adventures figure, h2, h1{
     text-align: center;
 }
 
@@ -109,13 +155,13 @@ h2 {
     justify-content: space-evenly;
 }
 
-.employees img {
-    width: 150px;
+.employees img, .adventures img {
+    width: 120px;
     height: auto;
     padding: 2px;
 }
 
-.employees figure figcaption {
+.employees figure figcaption, .adventures figure figcaption {
     margin-top: 2px;    
     margin-bottom: 5px;
 }
