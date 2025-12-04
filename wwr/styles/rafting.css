@@ -17,9 +17,14 @@ body {
     color: var(--accent1-color);
 }
 
-
-
 h1 {
+    max-width: 840px;
+    margin: 0 auto;
+    font-family: var(--heading-font);
+    margin-bottom: 10px;
+}
+
+h1, .hero h2 {
     width: 100%;
     padding: 2px;
     text-align: center;
@@ -76,13 +81,6 @@ header, main, footer {
     width: 100%;
 }
 
-h1, h2 {
-    font-family: var(--heading-font);
-    margin-bottom: 10px;
-}
-
-
-
 nav, p, section, article {
     margin: 8px;
     padding: 0;
@@ -99,8 +97,12 @@ nav, p, section, article {
     border-radius: 10px;
 }
 
+.hero h2 {
+    width: 55%;
+    margin-left: 23%;
+}
 
-.hero h1 {
+.hero h1, .hero h2{
     position: absolute;
     top: 100px;
 }
@@ -229,10 +231,11 @@ input, textarea, button, footer, h1 {
 button {
     text-transform: uppercase;
     font-family: var(--heading-font);
-    background-color: rgba(0, 0, 128, 0.559);
-    color: #120404;
+    background-color: rgba(122, 122, 217, 0.559);
+    color: #1b0707;
     font-size: 1.2rem;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .column1 {
@@ -247,4 +250,176 @@ button {
 .Company {
     display: flex;
     flex-direction: row;
+}
+
+/* Declaration for index.html, section, grid-item  */
+.cta {
+    text-align: center;
+    letter-spacing: 0.5px;
+    background-color: rgb(220, 220, 219);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.cta-button, .cta-click {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0px 30px;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    color: #2a05fa;
+    font-weight: bold;
+}
+
+.cta-button, .cta-click:hover {
+    background: #f6f6f6;
+}
+
+.grid-layout {
+    display: flex;
+    flex-direction: row;
+    background-color: #585ea2;
+    letter-spacing: 0.5px;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.grid-item {
+    background-color: rgb(220, 220, 219);
+    text-align: center;
+    border-radius: 10px;
+    padding: 1px;
+}
+
+.grid-item img {
+max-width: 20rem;
+margin: 10px 0;
+height: auto;
+}
+
+/* Some Declaration for trips.html */
+.trip-hero, .cta-contact {
+    text-align: center;
+    background-color: #d6dada;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: large;
+}
+
+.trip-card {
+    display: flex;
+    text-align: center;
+    padding: 0.5rem;
+    border: 2px solid #1a0a0a;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.trip-card img {
+    width: 25%;
+    height: auto;
+}
+
+
+.trip-card p, .trip-card h3{
+    font-size: large;
+    margin: 20px auto;
+}
+
+
+.trip-grid {
+    display: grid;
+    padding: 1rem;
+    background-color: #d0d8d6;
+    border-radius: 10px;
+}
+
+/* Declaration for trips.html table */
+.table-container {
+    overflow-x: auto;
+    width: 98%;
+    background-color: #c7f3eb;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+/* For PHONES and SMALLER screens */
+@media( max-width: 640px) {
+    table{
+        width: 100%;
+    }
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .navbar ul {
+        flex-direction: column; 
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 10px 0;
+    }
+    
+    /* Stack figures instead of squeezing them */
+    .figures-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    /* Reduce image size on smaller screens */
+    .employees img,
+    .adventures img {
+        width: 100px;
+        height: auto;
+    }
+
+    /* Adjust container padding and spacing */
+    .employees,
+    .adventures {
+        padding: 15px;
+    }
+
+    /* Slightly reduce heading sizes */
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+table {
+    border-collapse: collapse ;
+    border: 3px solid rgb(29, 192, 195);
+    letter-spacing: 1px;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+tbody, tfoot {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+tbody tr:nth-child(even){
+    background-color: lightblue;
+}
+
+th, td {
+    border: 1px solid rgb(130, 129, 132);
+    padding: 12px 18px;
+    text-align: center;
+}
+
+
+thead, tfoot tr { 
+    background-color: rgb(0 0 0);
+    color: white;
+    padding: 10px;
 }
